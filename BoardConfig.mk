@@ -1,0 +1,52 @@
+#
+# Copyright (C) 2015-2016 The Android Open-Source Project
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+# http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+#
+
+# inherit from common msm8916
+include device/lge/msm8916-common/BoardConfigCommon.mk
+
+# (TBD)
+LOCAL_PATH := device/lge/c90
+
+#OTA 
+
+#Kernel (TBD)
+TARGET_KERNEL_CONFIG := 
+TARGET_KERNEL_SOURCE := kernel/lge/msm8916
+
+# Partitions
+BOARD_FLASH_BLOCK_SIZE := 131072
+BOARD_BOOTIMAGE_PARTITION_SIZE := 25165824      # 24576 * 1024 mmcblk0p18
+BOARD_RECOVERYIMAGE_PARTITION_SIZE := 25165824  # 24576 * 1024 mmcblk0p19
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2576980992  # 2516583 * 1024 mmcblk0p37
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 3833488384 # 3743641 * 1024 mmcblk0p39
+
+# Bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
+BOARD_BLUETOOTH_BDROID_HCILP_INCLUDED := false
+BOARD_HAS_QCA_BT_ROME := true
+BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_QCOM := true
+QCOM_BT_USE_BTNV := true
+
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
+
+# Recovery
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
+
+# Init (TBD)
+TARGET_INIT_VENDOR_LIB := 
+TARGET_RECOVERY_DEVICE_MODULES := 

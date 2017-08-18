@@ -1,0 +1,3 @@
+add_lunch_combo lineage_c90-user
+add_lunch_combo lineage_c90-userdebug
+add_lunch_combo lineage_c90-eng
