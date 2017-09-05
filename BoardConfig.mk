@@ -46,7 +46,3 @@ TARGET_PROVIDES_LIBLIGHT := true
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
-
-# Init (TBD)
-TARGET_INIT_VENDOR_LIB := libinit_c90
-TARGET_RECOVERY_DEVICE_MODULES := libinit_c90
