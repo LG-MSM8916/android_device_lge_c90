@@ -17,12 +17,11 @@
 # inherit from common msm8916
 include device/lge/msm8916-common/BoardConfigCommon.mk
 
-# (TBD)
 LOCAL_PATH := device/lge/c90
 
 #OTA 
 
-#Kernel (TBD)
+#Kernel
 TARGET_KERNEL_CONFIG := c90_global_com_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/msm8916
 
@@ -32,6 +31,9 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 25165824      # 24576 * 1024 mmcblk0p18
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 25165824  # 24576 * 1024 mmcblk0p19
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2576980992  # 2516583 * 1024 mmcblk0p37
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 3833488384 # 3743641 * 1024 mmcblk0p39
+
+# sepolicy to permissive (temporarily)
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 
 # Bluetooth
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(LOCAL_PATH)/bluetooth
