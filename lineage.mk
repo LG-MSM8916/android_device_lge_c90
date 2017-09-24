@@ -14,10 +14,13 @@
 # limitations under the License.
 #
 
-# Inherit from our custom product configuration
+# Boot animation
+TARGET_SCREEN_HEIGHT := 1280
+TARGET_SCREEN_WIDTH := 720
+
+# Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/cm/config/common_full_phone.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
-$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
-$(call inherit-product, device/lge/c90/full_c90.mk)
+
+$(call inherit-product, device/lge/c70n/full_c70n.mk)
 
 PRODUCT_NAME := lineage_c90
