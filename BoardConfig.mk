@@ -24,7 +24,6 @@ LOCAL_PATH := device/lge/c90
 #Kernel
 TARGET_KERNEL_CONFIG := c90_global_com_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/msm8916
-BOARD_KERNEL_SEPARATED_DT := true
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
@@ -43,6 +42,9 @@ BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 #BOARD_HAVE_BLUETOOTH := true
 #BOARD_HAVE_BLUETOOTH_QCOM := true
 #QCOM_BT_USE_BTNV := true
+
+# Lights
+TARGET_PROVIDES_LIBLIGHT := true
 
 # NFC
 BOARD_NFC_DEVICE := "/dev/bcm2079x"
