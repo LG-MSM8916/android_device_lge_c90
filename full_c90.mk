@@ -73,6 +73,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/thermal-engine-8916.conf:system/etc/thermal-engine-8916.conf
 
+# Widevine
+PRODUCT_PACKAGES += \
+   libwvm_shim
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
