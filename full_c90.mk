@@ -77,6 +77,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
    libwvm_shim
 
+# RIL
+PRODUCT_PACKAGES += \
+    ril_shim
+
 # Ramdisk
 PRODUCT_PACKAGES += \
     fstab.qcom \
