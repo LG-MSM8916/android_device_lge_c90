@@ -22,7 +22,7 @@ LOCAL_PATH := device/lge/c90
 #OTA 
 
 #Kernel
-TARGET_KERNEL_CONFIG := c70_defconfig
+TARGET_KERNEL_CONFIG := c90_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/msm8916
 
 # Partitions
