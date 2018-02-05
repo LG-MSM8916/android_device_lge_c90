@@ -1,3 +1,4 @@
+# NEED TO UPDATE; DO NOT USE
 # Radio
 bin/netmgrd
 bin/qmuxd
