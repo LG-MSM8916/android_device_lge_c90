@@ -17,7 +17,7 @@
 
 set -e
 
-DEVICE=m216
+DEVICE=c90
 VENDOR=lge
 
 # Load extractutils and do some sanity checks
