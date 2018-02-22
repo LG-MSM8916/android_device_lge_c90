@@ -15,8 +15,8 @@
 #
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/common.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/lge/c90/full_c90.mk)
 
-PRODUCT_NAME := lineage_c90
+PRODUCT_NAME := aosp_c90

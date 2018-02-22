@@ -15,4 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_c90.mk
+    $(LOCAL_DIR)/aosp_m216.mk
