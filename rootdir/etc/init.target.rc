@@ -49,7 +49,6 @@ on property:ro.config.zram=true
 
 on init
    write /sys/module/qpnp_rtc/parameters/poweron_alarm 1
-   export LD_SHIM_LIBS "/system/vendor/lib/libwvm.so|libwvm_shim.so"
    export LD_SHIM_LIBS /system/lib/libril.so|ril_shim.so
 
 #enable zram
