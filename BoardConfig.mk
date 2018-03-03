@@ -19,7 +19,8 @@ include device/lge/msm8916-common/BoardConfigCommon.mk
 
 LOCAL_PATH := device/lge/c90
 
-#OTA 
+#OTA
+TARGET_OTA_ASSERT_DEVICE := c90,LG-H525
 
 #Kernel
 TARGET_KERNEL_CONFIG := c90_defconfig
