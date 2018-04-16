@@ -87,6 +87,9 @@ PRODUCT_COPY_FILES += \
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += device/lge/c90/overlay
 
+# Launcher
+PRODUCT_PACKAGES += \
+    Launcher3
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
