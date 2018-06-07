@@ -25,6 +25,7 @@ TARGET_OTA_ASSERT_DEVICE := c90,LG-H525
 #Kernel
 TARGET_KERNEL_CONFIG := c90_defconfig
 TARGET_KERNEL_SOURCE := kernel/lge/msm8916
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive # Permissive mode because of sepolicy issues
 
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 131072
