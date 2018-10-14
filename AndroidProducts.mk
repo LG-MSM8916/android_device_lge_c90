@@ -15,4 +15,5 @@
 #
 
 PRODUCT_MAKEFILES := \
+    $(LOCAL_DIR)/full_c90.mk \
     $(LOCAL_DIR)/aosp_c90.mk
