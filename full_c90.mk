@@ -17,79 +17,21 @@
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
+# Inherit from c90 device
+$(call inherit-product, device/lge/c90/device.mk)
+
 # Get non-open-source specific aspects
 $(call inherit-product-if-exists, vendor/lge/c90/c90-vendor.mk)
-
-$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 
 # common msm8916
 $(call inherit-product, device/lge/msm8916-common/msm8916.mk)
 
-# Permissions
-PRODUCT_COPY_FILES += \
-    frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hcef.xml:system/etc/permissions/android.hardware.nfc.hcef.xml
-
-# NFC
-PRODUCT_PACKAGES += \
-    NfcNci \
-    nfc_nci.bcm2079x.default \
-    Tag \
-    android.hardware.nfc@1.0-bcm
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/libnfc-brcm.conf:system/etc/libnfc-brcm.conf \
-    $(LOCAL_PATH)/configs/libnfc-brcm-20795a10.conf:system/etc/libnfc-brcm-20795a10.conf \
-    $(LOCAL_PATH)/configs/nfcee_access.xml:system/etc/nfcee_access.xml
-
-# Audio
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.audio.fluence.voicecall=true \
-    persist.audio.fluence.voicerec=false \
-    persist.audio.fluence.speaker=true \
-    ro.qc.sdk.audio.fluencetype=none
-
-# Audio configuration
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/mixer_paths.xml:system/etc/mixer_paths.xml
-
-# GPS
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/gps.conf:system/etc/gps.conf
-
-# Media
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/media_profiles.xml:system/etc/media_profiles.xml
-
-# Thermal
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal-engine-8916.conf:system/etc/thermal-engine-8916.conf
-
-# RIL
-PRODUCT_PACKAGES += \
-    ril_shim
-
-# Ramdisk
-PRODUCT_PACKAGES += \
-    fstab.qcom \
-    init.target.rc
-
-# Camera
-PRODUCT_PACKAGES += \
-    libmm-qcamera \
-    camera.msm8916
-
-# Wifi
-PRODUCT_COPY_FILES += \
-    device/lge/c90/wcnss/WCNSS_qcom_wlan_nv.bin:system/etc/firmware/wlan/prima/WCNSS_qcom_wlan_nv.bin
+# Time Zone data for recovery
+#PRODUCT_COPY_FILES += \
+#    bionic/libc/zoneinfo/tzdata:root/system/usr/share/zoneinfo/tzdata
 
 # Overlay
 DEVICE_PACKAGE_OVERLAYS += device/lge/c90/overlay
-
-# Launcher
-PRODUCT_PACKAGES += \
-    Launcher3
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
@@ -119,5 +61,6 @@ PRIVATE_BUILD_DESC="c90_global_com-user 6.0 MRA58K 1620222209bf1 release-keys"
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop
 BUILD_FINGERPRINT := "lge/c90_global_com/c90:6.0/MRA58K/1620222209bf1:user/release-keys"
+
 
 TARGET_VENDOR := lge

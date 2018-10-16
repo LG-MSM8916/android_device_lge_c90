@@ -72,7 +72,6 @@ lib/libmmcamera_interface.so
 lib/libmmjpeg_interface.so
 lib/libmorpho_image_stab31.so
 lib/libqomx_core.so
-lib/libarcsoft_beauty_shot.so
 vendor/lib/libjpegdhw.so
 vendor/lib/libjpegehw.so
 vendor/lib/libmmcamera2_c2d_module.so
@@ -80,13 +79,13 @@ vendor/lib/libmmcamera2_cpp_module.so
 vendor/lib/libmmcamera2_frame_algorithm.so
 vendor/lib/libmmcamera2_iface_modules.so
 vendor/lib/libmmcamera2_imglib_modules.so
-vendor/lib/libmmcamera2_isp_modules.so
 vendor/lib/libmmcamera2_is.so
+vendor/lib/libmmcamera2_isp_modules.so
 vendor/lib/libmmcamera2_pproc_modules.so
 vendor/lib/libmmcamera2_q3a_core.so
 vendor/lib/libmmcamera2_sensor_modules.so
-vendor/lib/libmmcamera2_stats_algorithm_sensors.so
 vendor/lib/libmmcamera2_stats_algorithm.so
+vendor/lib/libmmcamera2_stats_algorithm_sensors.so
 vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera2_vpe_module.so
 vendor/lib/libmmcamera2_wnr_module.so
@@ -94,13 +93,11 @@ vendor/lib/libmmcamera_faceproc.so
 vendor/lib/libmmcamera_hdr_gb_lib.so
 vendor/lib/libmmcamera_hdr_lib.so
 vendor/lib/libmmcamera_hi553_ff.so
-vendor/lib/libmmcamera_hi841_eeprom.so
-vendor/lib/libmmcamera_hi841.so
 vendor/lib/libmmcamera_imglib.so
-vendor/lib/libmmcamera_ov8858_eeprom.so
+vendor/lib/libmmcamera_mn34153.so
 vendor/lib/libmmcamera_ov8858.so
-vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_pdaf.so
+vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_tintless_algo.so
 vendor/lib/libmmcamera_tintless_bg_pca_algo.so
 vendor/lib/libmmcamera_wavelet_lib.so
@@ -111,7 +108,6 @@ vendor/lib/libmmqjpeg_codec.so
 vendor/lib/liboemcamera.so
 vendor/lib/libqomx_jpegenc.so
 lib/libSJlowlight.so
-vendor/lib/lib-dplmedia.so
 
 # Camera autofocus
 vendor/lib/libactuator_dw9714_camcorder.so
@@ -132,31 +128,32 @@ vendor/lib/libactuator_dw9719.so
 vendor/lib/libactuator_wv517_camcorder.so
 vendor/lib/libactuator_wv517_camera.so
 vendor/lib/libactuator_wv517.so
-vendor/lib/libactuator_zc533_camcorder.so
-vendor/lib/libactuator_zc533_camera.so
+vendor/lib/libactuator_zc533_hi842.so
 vendor/lib/libactuator_zc533_hi842_camcorder.so
 vendor/lib/libactuator_zc533_hi842_camera.so
-vendor/lib/libactuator_zc533_hi842.so
 vendor/lib/libactuator_zc533_imx258_camcorder.so
 vendor/lib/libactuator_zc533_imx258_camera.so
+vendor/lib/libactuator_zc533_mn34153.so
 vendor/lib/libactuator_zc533_mn34153_camcorder.so
 vendor/lib/libactuator_zc533_mn34153_camera.so
-vendor/lib/libactuator_zc533_mn34153.so
-vendor/lib/libactuator_zc533.so
 
 # Camera chromatix
-lib/libchromatix_hi841_common.so
-lib/libchromatix_hi841_default_video.so
-lib/libchromatix_hi841_preview.so
-lib/libchromatix_hi841_snapshot.so
 vendor/lib/libchromatix_hi553_ff_common.so
 vendor/lib/libchromatix_hi553_ff_default_video.so
 vendor/lib/libchromatix_hi553_ff_liveshot.so
 vendor/lib/libchromatix_hi553_ff_snapshot.so
-vendor/lib/libchromatix_ov5670_common.so
-vendor/lib/libchromatix_ov5670_default_video.so
-vendor/lib/libchromatix_ov5670_liveshot.so
-vendor/lib/libchromatix_ov5670_snapshot.so
+vendor/lib/libchromatix_hi553_ff_vt.so
+vendor/lib/libchromatix_mn34153_common.so
+vendor/lib/libchromatix_mn34153_common_m.so
+vendor/lib/libchromatix_mn34153_default_video.so
+vendor/lib/libchromatix_mn34153_default_video_m.so
+vendor/lib/libchromatix_mn34153_liveshot.so
+vendor/lib/libchromatix_mn34153_liveshot_m.so
+vendor/lib/libchromatix_mn34153_preview.so
+vendor/lib/libchromatix_mn34153_preview_m.so
+vendor/lib/libchromatix_mn34153_snapshot.so
+vendor/lib/libchromatix_mn34153_snapshot_m.so
+vendor/lib/libchromatix_mn34153_snapshot_panorama_m.so
 vendor/lib/libchromatix_ov8858_common.so
 vendor/lib/libchromatix_ov8858_default_video.so
 vendor/lib/libchromatix_ov8858_hfr_120fps.so

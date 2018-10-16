@@ -1,4 +1,4 @@
-Copyright 2017 - The Lineage OS Project
+Copyright 2018 - The Lineage OS Project
 
 Device configuration for LG G4c (H525N).
 =====================================

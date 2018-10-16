@@ -14,9 +14,10 @@
 # limitations under the License.
 #
 
-# Inherit some common LineageOS stuff.
+# Inherit from our custom product configuration
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
+$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
 $(call inherit-product, device/lge/c90/full_c90.mk)
 
 PRODUCT_NAME := lineage_c90
