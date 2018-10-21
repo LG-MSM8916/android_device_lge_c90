@@ -40,4 +40,4 @@ TARGET_PROVIDES_LIBLIGHT := true
 BOARD_NFC_DEVICE := "/dev/bcm2079x"
 
 # Recovery
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.recovery
