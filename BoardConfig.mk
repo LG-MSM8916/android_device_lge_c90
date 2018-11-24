@@ -41,3 +41,11 @@ BOARD_NFC_DEVICE := "/dev/bcm2079x"
 
 # Recovery
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/etc/fstab.qcom
+
+# Camera
+
+# Camera
+USE_DEVICE_SPECIFIC_CAMERA := true
+TARGET_HAS_LEGACY_CAMERA_HAL1 := true
+TARGET_USES_MEDIA_EXTENSIONS := true
+TARGET_PROVIDES_CAMERA_HAL := true
