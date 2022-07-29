@@ -30,4 +30,4 @@ PRODUCT_GMS_CLIENTID_BASE := android-lge
 
 # Fingerprint
 PRODUCT_BUILD_PROP_OVERRIDES += \
-	"PRIVATE_BUILD_DESC="c90_global_com-user 6.0 MRA58K 1620222209bf1 release-keys"
+	PRIVATE_BUILD_DESC="c90_global_com-user 6.0 MRA58K 1620222209bf1 release-keys"
